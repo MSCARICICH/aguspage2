@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .index-body{
     margin: 0;
     padding: 0;
@@ -8,48 +11,38 @@
 .index-header
 {
     background-color: rgba(255, 102, 0, 0.6);
-    display: flex;
+    width: 100%;
+    padding: 15px;
 }
 
 .index-header h1
 {
+    position: absolute;
     color: rgb(255, 255, 255);
     margin-left: 20px;
 }
 
-.index-header .index-content nav
+.index-header .enlaces a
 {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-}
-
-.index-header .index-content ul
-{
-    display: flex;
-    align-items: end;
-    justify-content: right;
-    padding: 20px;
-    padding-left: 59vw;
-}
-
-.index-header .index-content ul li
-{
-    list-style: none;
-    display: flex;
-    justify-content: right;
-    align-items: end;
     margin-right: 35px;
 }
 
-.index-header .index-content ul li a
+.index-header .enlaces
+{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.index-header a
 {
     text-decoration: none;    
     color: white;
     font-size: 18px;
 }
 
-.index-header .index-content ul li a:hover
+.index-header a:hover
 {
     color: rgb(0, 225, 255);
     transition: cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s color;
@@ -64,6 +57,7 @@
     background-color: rgba(255, 102, 0, 0.6);
     position: relative;
     bottom: 0;
+    width: 100%;
 }
 
 .index-body .hero
@@ -72,7 +66,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* background: #333; */
     color: rgb(255, 255, 255);
     margin-bottom: 100px;
     position: relative;
@@ -106,12 +99,18 @@
 {
     color: rgb(255, 255, 255);
     display: flex;
+    margin-top: 14px;
   
 }
 .contenedor{
     display: grid;
     grid-template-columns: 300px 1fr 300px;
 }
+
+.messi{
+    display: flex;
+}
+
 .layerlist
 {
     width: 277px;
@@ -119,8 +118,15 @@
     background: rgba(255, 72, 0, 0.81);
     padding: 24px;
     border-radius: 8px;
-    margin-right: 30px;
-    margin-left: 5vw;
+    margin: auto;
+    box-shadow: 0px 1px 10px rgba(1, 159, 250, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.layerlist:hover{
+    box-shadow: 5px 5px 20px rgba(2, 182, 253, 0.4);
+    transform: translateY(-3%);
 }
 
 .layerlist .boton1
@@ -145,9 +151,97 @@
     text-decoration: none;
 }
 .lista-opciones{
+    color: white;
+}
+
+.layerlist2
+{
+    width: 277px;
+    height: 550px;
+    background: rgba(255, 72, 0, 0.81);
+    padding: 24px;
+    border-radius: 8px;
+    margin: auto;
+    box-shadow: 0px 1px 10px rgba(1, 159, 250, 0.2);
+    cursor: default;
+    transition: all 400ms ease; 
+}
+
+.layerlist2:hover{
+    box-shadow: 5px 5px 20px rgba(2, 182, 253, 0.4);
+    transform: translateY(-3%);
+}
+
+.layerlist2 .boton2
+{
+    height: 30px;
+    width: 110px;
+    border-style: none;
+    border-radius: 50px;
+    background-color: #001b92;
+    color: white;
+    margin-top: 11px;
+    margin-left: 60px;
+}
+
+.layerlist2 .boton2 a:hover
+{
+    color: aqua;
+    transition: color 0.6s;
+}
+.layerlist2 .boton2 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.lista-opciones2{
     color: white
     ;
 }
+
+.layerlist3
+{
+    width: 277px;
+    height: 550px;
+    background: rgba(255, 72, 0, 0.81);
+    padding: 24px;
+    border-radius: 8px;
+    margin: auto;
+    box-shadow: 0px 1px 10px rgba(1, 159, 250, 0.2);
+    cursor: default;
+    transition: all 400ms ease; 
+}
+
+.layerlist3:hover{
+    box-shadow: 5px 5px 20px rgba(2, 182, 253, 0.4);
+    transform: translateY(-3%);
+}
+
+.layerlist3 .boton3
+{
+    height: 30px;
+    width: 110px;
+    border-style: none;
+    border-radius: 50px;
+    background-color: #001b92;
+    color: white;
+    margin-top: 11px;
+    margin-left: 60px;
+}
+
+.layerlist3 .boton3 a:hover
+{
+    color: aqua;
+    transition: color 0.6s;
+}
+.layerlist3 .boton3 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.lista-opciones3{
+    color: white
+    ;
+}
+
 
 .hero .head_texto{
     width: 100%;
@@ -272,5 +366,133 @@ color: white;
     }
 }
 
+@media(max-width: 853px) {
+
+    .messi
+    {
+        flex-direction: column;
+    }
+
+    .layerlist
+    {
+        margin-bottom: 20px;
+    }
+
+    .layerlist2
+    {
+        margin-top: 20px;
+    }
+
+    .layerlist3
+    {
+        margin-top: 20px;
+    }
+}
 
 
+
+
+
+
+
+
+.index-body-general{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(83, 83, 83);
+}
+.index-header-general{
+    background-color: rgba(255, 102, 0, 0.6);
+    display: flex;
+}
+.index-header-general h1{
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+}
+
+.index-compra{
+margin: 376px; 
+color: white;
+}
+
+
+.index-footer-general{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 102, 0, 0.6);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.index-footer-general .footer-general{
+color: rgb(255, 255, 255);;
+}
+
+.index-contacto{
+    padding: 30px;
+    padding-top: 30px;
+
+}
+
+.index-body-general2{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(83, 83, 83);
+}
+.index-header-general2{
+    background-color: rgba(255, 102, 0, 0.6);
+    display: flex;
+}
+.index-header-general2 h1{
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+}
+
+
+
+.index-footer-general2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 102, 0, 0.6);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.index-footer-general2 .footer-general2{
+color: rgb(255, 255, 255);;
+}
+
+.video-gtx{
+    display: flex;
+    justify-content: center;
+}
+
+
+.index-body-general3{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(83, 83, 83);
+}
+.index-header-general3{
+    background-color: rgba(255, 102, 0, 0.6);
+    display: flex;
+}
+.index-header-general3 h1{
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+}
+
+.index-footer-general3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 102, 0, 0.6);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.index-footer-general3 .footer-general3{
+color: rgb(255, 255, 255);;
+}
