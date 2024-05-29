@@ -387,6 +387,18 @@ color: white;
     {
         margin-top: 20px;
     }
+
+    .index-header h1
+   {
+    display: none;
+   }
+
+   .index-header .enlaces
+   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
 }
 
 
